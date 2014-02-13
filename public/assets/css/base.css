@@ -1,4 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,700);
 @import url(http://fonts.googleapis.com/css?family=Varela+Round);
 
 /* Sticky footer styles
@@ -27,13 +26,13 @@ body {
 }
 
 
-/* Custom page CSS
+/* Everything else
 -------------------------------------------------- */
-/* Not required for template or sticky footer method. */
 
 #wrap > .container {
   padding: 60px 15px 0;
 }
+
 .container .text-muted {
   margin: 20px 0;
 }
@@ -47,11 +46,10 @@ code {
   font-size: 80%;
 }
 
-/* more things */
-
 .navbar {
   background-color: #00B9F2;
 }
+
 .navbar-brand {
   color: #fff;
   font-family: 'Varela Round', sans-serif;
@@ -59,20 +57,25 @@ code {
   font-weight: 400;
   letter-spacing: -1px;
 }
+
 .navbar-nav>li>a {
   color: #fff;
 }
+
 .navbar-nav>li>a:hover {
   text-decoration: none;
   background-color: #007AC2;
 }
+
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Varela Round', sans-serif;
   letter-spacing: -1px;
 }
+
 .content {
   padding-bottom: 50px;
 }
+
 .social {
   font-size: 20px;
 }
