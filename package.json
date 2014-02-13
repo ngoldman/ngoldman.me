@@ -1,0 +1,27 @@
+{
+  "name": "ngoldman.me",
+  "version": "0.0.0",
+  "description": "ngoldman has a website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ngoldman/ngoldman.me.git"
+  },
+  "keywords": [
+    "indieweb"
+  ],
+  "author": "Nate Goldman <nate@ngoldman.me>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ngoldman/ngoldman.me/issues"
+  },
+  "homepage": "https://github.com/ngoldman/ngoldman.me",
+  "dependencies": {
+    "director": "~1.2.2",
+    "union": "~0.3.8",
+    "ecstatic": "~0.4.13"
+  }
+}
