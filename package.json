@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "description": "ngoldman has a website",
   "main": "index.js",
+  "private": "true",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -26,6 +27,6 @@
   },
   "engines": {
     "node": "0.10.x",
-    "npm":  "1.3.x"
+    "npm":  "1.4.x"
   }
 }
