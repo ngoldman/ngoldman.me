@@ -5,10 +5,10 @@
   "main": "index.js",
   "private": "true",
   "scripts": {
-    "postinstall": "./node_modules/bower/bin/bower install",
+    "bower": "./node_modules/bower/bin/bower install",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "./node_modules/metalsmith/bin/metalsmith",
-    "start": "npm run build && node index.js"
+    "start": "npm run bower && npm run build && node index.js"
   },
   "repository": {
     "type": "git",
