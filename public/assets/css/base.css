@@ -56,23 +56,6 @@ code {
 /* Objects
 -------------------------------------------------- */
 
-.index {
-  background: url(/assets/img/horsehead.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.index body {
-  background: none;
-}
-
-.index main {
-  color: #fff;
-  background: rgba(23,0,23,.66);
-}
-
 .sidebar {
   background: #f3f3f1;
   border-radius: 0 0 10px 0;
