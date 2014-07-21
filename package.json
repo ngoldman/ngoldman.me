@@ -5,7 +5,10 @@
   "main": "index.js",
   "private": "true",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "./node_modules/bower/bin/bower install",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/metalsmith/bin/metalsmith",
+    "start": "npm run build && node index.js"
   },
   "repository": {
     "type": "git",
@@ -21,12 +24,22 @@
   },
   "homepage": "https://github.com/ngoldman/ngoldman.me",
   "dependencies": {
+    "bower": "^1.3.8",
     "director": "~1.2.2",
-    "union": "~0.3.8",
-    "ecstatic": "~0.4.13"
+    "ecstatic": "~0.4.13",
+    "metalsmith": "^0.9.0",
+    "metalsmith-assets": "0.0.1",
+    "metalsmith-clean": "0.0.0",
+    "metalsmith-collections": "^0.4.1",
+    "metalsmith-excerpts": "^1.0.0",
+    "metalsmith-markdown": "^0.2.1",
+    "metalsmith-permalinks": "^0.3.2",
+    "metalsmith-templates": "^0.5.2",
+    "swig": "^1.4.1",
+    "union": "~0.3.8"
   },
   "engines": {
     "node": "0.10.x",
-    "npm":  "1.4.x"
+    "npm": "1.4.x"
   }
 }

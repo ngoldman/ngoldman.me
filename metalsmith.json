@@ -1,0 +1,25 @@
+{
+  "source": "src",
+  "destination": "build",
+  "plugins": {
+    "metalsmith-clean": {},
+    "metalsmith-excerpts": true,
+    "metalsmith-collections": {
+      "posts": {
+        "sortBy": "date",
+        "reverse": true
+      }
+    },
+    "metalsmith-markdown": {},
+    "metalsmith-permalinks": {
+      "pattern": "posts/:title"
+    },
+    "metalsmith-templates": {
+      "engine": "swig"
+    },
+    "metalsmith-assets": {
+      "source": "./public/",
+      "destination": "./"
+    }
+  }
+}

@@ -1,3 +1,4 @@
 require('./server').start({
-  name: 'ngoldman.me'
+  name: 'ngoldman.me',
+  publicPath: 'build'
 });
