@@ -23,7 +23,8 @@ body {
 /* Set the fixed height of the footer here */
 #footer {
   height: 60px;
-  background-color: #f3f3f1;
+  background-color: #4A89DC;
+  color: #fff;
 }
 
 /* Type & Layout
@@ -57,8 +58,9 @@ code {
 -------------------------------------------------- */
 
 .sidebar {
-  background: #f3f3f1;
+  background: #5D9CEC;
   border-radius: 0 0 10px 0;
+  color: #fff;
   padding: 25px 15px 1px;
   margin-bottom: 25px;
 }
@@ -101,6 +103,7 @@ code {
 
 #footer > .container .text-muted {
   margin: 20px 0;
+  color: #fff;
 }
 
 #footer > .container {
