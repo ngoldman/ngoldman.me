@@ -4,6 +4,7 @@
   "plugins": {
     "metalsmith-clean": {},
     "metalsmith-excerpts": true,
+    "metalsmith-drafts": true,
     "metalsmith-collections": {
       "posts": {
         "sortBy": "date",

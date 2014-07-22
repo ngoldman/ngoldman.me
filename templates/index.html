@@ -2,7 +2,7 @@
 <html lang="en" class="index">
 <head>
   <meta charset="UTF-8">
-  <title>{{ title }} | Nate Goldman</title>
+  <title>Nate Goldman</title>
   <meta name="viewport" content="width=device-width, user-scalable=no">
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="stylesheet" href="/assets/components/Bootflat/css/bootstrap.min.css">
@@ -13,13 +13,12 @@
 <body>
 
 <div id="wrap">
-  <div class="container-fluid">
+  <div class="container">
     <div class="row">
 
-      <aside class="sidebar col-sm-3 col-md-2">
+      <aside class="sidebar leader-3 col-sm-3 col-md-2">
         <header class="identity trailer-1">
-          <a href="/"><img class="avatar img-circle" src="http://www.gravatar.com/avatar/5f7be8ce4d2d0ac740b1c56b07d7404b.png?s=512&d=identicon"></a>
-          <h1 class="name text-center leader-half">Nate Goldman</h1>
+          <h1 class="name text-center leader-half"><a href="/">Nate Goldman</a></h1>
           <p class="text-center"><small>Designer &amp; Developer &amp; Organizer in Portland, Oregon</small></p>
         </header>
         <div class="primary-nav list-group">
@@ -27,14 +26,14 @@
             <i class="fa fa-fw fa-file-text-o"></i>&nbsp; Blog
           </a>
           <a class="list-group-item" href="/projects/">
-            <i class="fa fa-fw fa-paper-plane"></i>&nbsp; Projects
+            <i class="fa fa-fw fa-code-fork"></i>&nbsp; Projects
           </a>
           <a class="list-group-item" href="/about/">
-            <i class="fa fa-fw fa-rebel"></i>&nbsp; About
+            <i class="fa fa-fw fa-floppy-o"></i>&nbsp; About
           </a>
         </div>
 
-        <div class="elsewhere panel panel-default">
+        <div class="elsewhere panel panel-default hidden-xs">
           <div class="panel-heading">Elsewhere</div>
           <ul class="list-group">
             <a class="list-group-item" href="https://github.com/ngoldman" rel="me">
@@ -42,9 +41,6 @@
             </a>
             <a class="list-group-item" href="https://twitter.com/ungoldman" rel="me">
               <i class="fa fa-fw fa-twitter"></i>&nbsp; Twitter
-            </a>
-            <a class="list-group-item" href="https://soundcloud.com/freshdragon">
-              <i class="fa fa-fw fa-soundcloud"></i>&nbsp; Soundcloud
             </a>
             <a class="list-group-item" href="http://instagram.com/brutaldiss">
               <i class="fa fa-fw fa-instagram"></i>&nbsp; Instagram
@@ -56,19 +52,44 @@
         </div>
       </aside>
 
-      <main class="col-sm-5 col-md-6 col-sm-offset-1 col-md-offset-1 leader-2 padding-trailer-1">
-        <div class="alert alert-success">
-          <h4><i class="fa fa-info-circle"></i> A website appears!</h4>
+      <main class="col-sm-8 col-sm-offset-1 leader-3 padding-trailer-1">
+        <div class="row">
+          <div class="col-sm-9">
+            <h4><i class="fa fa-info-circle"></i> A website appears!</h4>
+            <h6><i class="fa fa-cube"></i> You are given several choices:</h6>
 
-          <h6>You are given several choices:</h6>
+            <div class="list-group">
+              <a href="/posts/" class="list-group-item">
+                <i class="fa fa-fw fa-file-text-o"></i> Read some words that I put on the internet
+              </a>
+              <a href="/projects/" class="list-group-item">
+                <i class="fa fa-fw fa-code-fork"></i> Fork one of my projects, I need help.
+              </a>
+              <a href="/projects/" class="list-group-item">
+                <i class="fa fa-fw fa-floppy-o"></i> Find a out a little more about me.
+              </a>
+              <a href="http://twitter.com/ungoldman" class="list-group-item">
+                <i class="fa fa-fw fa-comment-o"></i> Talk to me on twitter, because why not?
+              </a>
+            </div>
 
-          <ul class="padding-trailer-half">
-            <li><i class="fa fa-fw fa-code"></i> Come to a <a class="alert-link" href="http://codeforportland.org">Code for Portland</a> hack night if you're in Portland and want to get into civic hacking and figure out ways to make our city better.</li>
-            <li><i class="fa fa-fw fa-map-marker"></i> Check out a <a class="alert-link" href="http://www.maptime.io/">maptime</a> group near you if you're interested in learning about maps.</li>
-            <li><i class="fa fa-fw fa-file-text-o"></i> Read some <a class="alert-link" href="/posts/">words</a> that I put on the internet.</li>
-            <li><i class="fa fa-fw fa-code-fork"></i> Fork one of my <a class="alert-link" href="/projects/">projects</a>, I need help.</li>
-            <li><i class="fa fa-fw fa-comment"></i> Talk to me on <a class="alert-link" href="http://twitter.com/ungoldman">twitter</a>.</li>
-          </ul>
+            <h6><i class="fa fa-cubes"></i> Alternately, I recommend doing the following:</h6>
+
+            <div class="list-group">
+              <a href="http://codeforportland.org" class="list-group-item">
+                <h4 class="list-group-item-heading">
+                  <i class="fa fa-fw fa-code"></i> Come to a Code for Portland hack night
+                </h4>
+                <p class="list-group-item-text">Worth checking out if you're in Portland and want to get into civic hacking and figure out ways to make our city better.</p>
+              </a>
+              <a href="http://www.maptime.io/chapters/" class="list-group-item">
+                <h4 class="list-group-item-heading">
+                  <i class="fa fa-fw fa-map-marker"></i> Check out a Maptime group near you
+                </h4>
+                <p class="list-group-item-text">Maptime is the place to be if you're interested in learning about maps on the web! Very beginner friendly.</p>
+              </a>
+            </div>
+          </div>
         </div>
       </main>
 
@@ -76,12 +97,25 @@
   </div>
 </div>
 
-<div id="footer">
-  <div class="container">
-    <p class="text-muted pull-left">Hello</p>
-    <p class="text-muted pull-right">Hi</p>
+<aside class="sidebar visible-xs-block">
+  <div class="elsewhere panel panel-default">
+    <div class="panel-heading">Elsewhere</div>
+    <ul class="list-group">
+      <a class="list-group-item" href="https://github.com/ngoldman" rel="me">
+        <i class="fa fa-fw fa-github"></i>&nbsp; Github
+      </a>
+      <a class="list-group-item" href="https://twitter.com/ungoldman" rel="me">
+        <i class="fa fa-fw fa-twitter"></i>&nbsp; Twitter
+      </a>
+      <a class="list-group-item" href="http://instagram.com/brutaldiss">
+        <i class="fa fa-fw fa-instagram"></i>&nbsp; Instagram
+      </a>
+      <a class="list-group-item" href="mailto:nate@ngoldman.me" rel="me">
+        <i class="fa fa-fw fa-envelope"></i>&nbsp; Email
+      </a>
+    </ul>
   </div>
-</div>
+</aside>
 
 </body>
 </html>
