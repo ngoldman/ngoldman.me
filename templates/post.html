@@ -54,12 +54,10 @@
 
       <main class="col-sm-8 col-sm-offset-1 leader-3 padding-trailer-1">
         <article class="post trailer-2">
-          <header class="trailer-half">
-            <h3>
-              <a href="/{{ path }}/">{{ title }}</a>
-              <time class="timestamp">{{ date | date('F jS, Y') }}</time>
-            </h3>
-          </header>
+          <h3 class="trailer-2">
+            <i class="fa fa-file-text-o"></i> {{ title }}
+            <time class="timestamp">{{ date | date('F jS, Y') }}</time>
+          </h3>
 
           {{ contents | safe }}
         </article>
