@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Nate Goldman | Designer, Developer, Organizer</title>
+  <title>Nate Goldman | Designer & Developer</title>
   <meta name="viewport" content="width=device-width, user-scalable=no">
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="stylesheet" href="/assets/components/Bootflat/css/bootstrap.min.css">
@@ -15,7 +15,9 @@
     <div class="container">
       <div class="row">
         {% include "./_nav.html" %}
-        {% block content %}{% endblock %}
+        <main class="col-sm-9 col-md-8 col-sm-offset-3 leader-1 padding-trailer-1">
+          {% block content %}{% endblock %}
+        </main>
       </div>
     </div>
   </div>

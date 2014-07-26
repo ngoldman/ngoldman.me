@@ -6,6 +6,7 @@
 html,
 body {
   background: #fafafa;
+  background-size: cover;
   height: 100%;
   /* The html and body elements cannot have any padding or margin. */
 }
@@ -58,15 +59,47 @@ code {
 -------------------------------------------------- */
 
 .sidebar {
-  background: #f6f6f3;
-  border-radius: 10px;
-  color: #444;
+  background: #333;
+  color: #fff;
   padding: 25px 15px 1px;
-  margin-bottom: 25px;
+  padding-bottom: 25px;
 }
+
+@media (min-width: 768px) {
+  .sidebar {
+    padding: 0;
+    position: fixed;
+    left: 0;
+    width: 200px;
+    bottom: 0;
+    top: 0;
+    overflow-y: scroll;
+  }
+  .sidebar .panel,
+  .sidebar .panel-heading,
+  .sidebar .list-group,
+  .sidebar .list-group-item {
+    border-radius: 0;
+    background: #444;
+    color: #fff;
+    border-color: #222;
+    border-left: none;
+    border-right: none;
+  }
+  .sidebar .list-group-item:first-child {
+    border-top: 1px solid #222;
+  }
+  .sidebar a.list-group-item:focus,
+  .sidebar a.list-group-item:hover,
+  .sidebar a.list-group-item.active,
+  .sidebar a.list-group-item.active:hover {
+    border-color: #222;
+  }
+}
+
 .elsewhere {
-  margin-bottom: 15px;
   font-size: 13px;
+  padding-top: 1px;
 }
 .elsewhere .panel-heading {
   padding: 10px;
