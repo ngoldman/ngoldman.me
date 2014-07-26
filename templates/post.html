@@ -1,11 +1,12 @@
 {% extends "./_base.html" %}
 {% block content %}
-<h3 class="trailer-2">
+<h3 class="trailer-half">
   <i class="fa fa-fw fa-file-text-o"></i> {{ title }}
-  <time class="timestamp">{{ date | date('F jS, Y') }}</time>
 </h3>
 
-<article class="post trailer-2">
+<p class="trailer-2"><time class="timestamp">{{ date | date('F jS, Y') }}</time></p>
+
+<article class="trailer-2">
   {{ contents | safe }}
 </article>
 {% endblock %}
