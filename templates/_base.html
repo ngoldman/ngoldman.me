@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nate Goldman | Designer, Developer, Organizer</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/assets/components/Bootflat/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/components/Bootflat/bootflat/css/bootflat.min.css">
+  <link rel="stylesheet" href="/assets/components/fontawesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/assets/css/base.css">
+</head>
+<body>
+  <div id="wrap">
+    <div class="container">
+      <div class="row">
+        {% include "./_nav.html" %}
+        {% block content %}{% endblock %}
+      </div>
+    </div>
+  </div>
+</body>
+</html>

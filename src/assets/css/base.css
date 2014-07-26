@@ -66,14 +66,14 @@ code {
 }
 .elsewhere {
   margin-bottom: 15px;
-  font-size: 11px;
+  font-size: 13px;
 }
 .elsewhere .panel-heading {
-  padding: 5px 10px;
+  padding: 10px;
   font-weight: 600;
 }
 .elsewhere .list-group-item {
-  padding: 7px 10px;
+  padding: 11px 10px;
 }
 
 .identity {}

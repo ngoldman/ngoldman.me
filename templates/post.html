@@ -1,91 +1,14 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>{{ title }} | Nate Goldman</title>
-  <meta name="viewport" content="width=device-width, user-scalable=no">
-  <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="stylesheet" href="/assets/components/Bootflat/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/assets/components/Bootflat/bootflat/css/bootflat.min.css">
-  <link rel="stylesheet" href="/assets/components/fontawesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/assets/css/base.css">
-</head>
-<body>
+{% extends "./_base.html" %}
+{% block content %}
+<main class="col-sm-8 col-sm-offset-1 leader-3 padding-trailer-1">
+  <h1>hey: {{ section }}, {{ type }}</h1>
+  <article class="post trailer-2">
+    <h3 class="trailer-2">
+      <i class="fa fa-file-text-o"></i> {{ title }}
+      <time class="timestamp">{{ date | date('F jS, Y') }}</time>
+    </h3>
 
-<div id="wrap">
-  <div class="container">
-    <div class="row">
-
-      <aside class="sidebar leader-3 col-sm-3 col-md-2">
-        <header class="identity trailer-1">
-          <h1 class="name text-center leader-half"><a href="/">Nate Goldman</a></h1>
-          <p class="text-center"><small>Designer &amp; Developer &amp; Organizer in Portland, Oregon</small></p>
-        </header>
-        <div class="primary-nav list-group">
-          <a class="list-group-item active" href="/posts/">
-            <i class="fa fa-fw fa-file-text-o"></i>&nbsp; Blog
-          </a>
-          <a class="list-group-item" href="/projects/">
-            <i class="fa fa-fw fa-code-fork"></i>&nbsp; Projects
-          </a>
-          <a class="list-group-item" href="/about/">
-            <i class="fa fa-fw fa-floppy-o"></i>&nbsp; About
-          </a>
-        </div>
-
-        <div class="elsewhere panel panel-default hidden-xs">
-          <div class="panel-heading">Elsewhere</div>
-          <ul class="list-group">
-            <a class="list-group-item" href="https://github.com/ngoldman" rel="me">
-              <i class="fa fa-fw fa-github"></i>&nbsp; Github
-            </a>
-            <a class="list-group-item" href="https://twitter.com/ungoldman" rel="me">
-              <i class="fa fa-fw fa-twitter"></i>&nbsp; Twitter
-            </a>
-            <a class="list-group-item" href="http://instagram.com/brutaldiss">
-              <i class="fa fa-fw fa-instagram"></i>&nbsp; Instagram
-            </a>
-            <a class="list-group-item" href="mailto:nate@ngoldman.me" rel="me">
-              <i class="fa fa-fw fa-envelope"></i>&nbsp; Email
-            </a>
-          </ul>
-        </div>
-      </aside>
-
-      <main class="col-sm-8 col-sm-offset-1 leader-3 padding-trailer-1">
-        <article class="post trailer-2">
-          <h3 class="trailer-2">
-            <i class="fa fa-file-text-o"></i> {{ title }}
-            <time class="timestamp">{{ date | date('F jS, Y') }}</time>
-          </h3>
-
-          {{ contents | safe }}
-        </article>
-      </main>
-
-    </div>
-  </div>
-</div>
-
-<aside class="sidebar visible-xs-block">
-  <div class="elsewhere panel panel-default">
-    <div class="panel-heading">Elsewhere</div>
-    <ul class="list-group">
-      <a class="list-group-item" href="https://github.com/ngoldman" rel="me">
-        <i class="fa fa-fw fa-github"></i>&nbsp; Github
-      </a>
-      <a class="list-group-item" href="https://twitter.com/ungoldman" rel="me">
-        <i class="fa fa-fw fa-twitter"></i>&nbsp; Twitter
-      </a>
-      <a class="list-group-item" href="http://instagram.com/brutaldiss">
-        <i class="fa fa-fw fa-instagram"></i>&nbsp; Instagram
-      </a>
-      <a class="list-group-item" href="mailto:nate@ngoldman.me" rel="me">
-        <i class="fa fa-fw fa-envelope"></i>&nbsp; Email
-      </a>
-    </ul>
-  </div>
-</aside>
-
-</body>
-</html>
+    {{ contents | safe }}
+  </article>
+</main>
+{% endblock %}
