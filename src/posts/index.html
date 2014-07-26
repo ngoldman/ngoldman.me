@@ -3,27 +3,25 @@ template: default.html
 section: blog
 ---
 
-<main class="col-sm-8 col-sm-offset-1 leader-3 padding-trailer-1">
-  {% if posts.length %}
-  <h3 class="trailer-2"><i class="fa fa-file-text-o"></i> Blog</h3>
-  <div class="row">
-    <div class="col-sm-9">
-      <div class="list-group">
-      {% for post in posts %}
+{% if posts.length %}
+<h3 class="trailer-2"><i class="fa fa-fw fa-file-text-o"></i> Blog</h3>
+<div class="row">
+  <div class="col-sm-9">
+    <div class="list-group">
+    {% for post in posts %}
 
-      <a href="/{{ post.path }}/" class="list-group-item">
-        <h4 class="list-group-item-heading">{{ post.title }}</h4>
-        <p class="list-group-item-text"><time class="timestamp">{{ post.date | date('F jS, Y') }}</time></p>
-      </a>
+    <a href="/{{ post.path }}/" class="list-group-item">
+      <h4 class="list-group-item-heading">{{ post.title }}</h4>
+      <p class="list-group-item-text"><time class="timestamp">{{ post.date | date('F jS, Y') }}</time></p>
+    </a>
 
-      {% endfor %}
-      </div>
+    {% endfor %}
     </div>
   </div>
-  {% endif %}
+</div>
+{% endif %}
 
-  {% if !posts.length %}
-  <h3 class="trailer-2"><i class="fa fa-warning"></i> Under Construction</h3>
-  <img src="https://camo.githubusercontent.com/4a7cf94aedbd23c13cc2d75fdc3b2af5c816c208/687474703a2f2f7374617469632e646967672e636f6d2f7374617469632f696d616765732f6469676765722e676966">
-  {% endif %}
-</main>
+{% if !posts.length %}
+<h3 class="trailer-2"><i class="fa fa-fw fa-warning"></i> Under Construction</h3>
+<img src="https://camo.githubusercontent.com/4a7cf94aedbd23c13cc2d75fdc3b2af5c816c208/687474703a2f2f7374617469632e646967672e636f6d2f7374617469632f696d616765732f6469676765722e676966">
+{% endif %}

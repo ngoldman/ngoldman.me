@@ -1,14 +1,11 @@
 {% extends "./_base.html" %}
 {% block content %}
-<main class="col-sm-8 col-sm-offset-1 leader-3 padding-trailer-1">
-  <h1>hey: {{ section }}, {{ type }}</h1>
-  <article class="post trailer-2">
-    <h3 class="trailer-2">
-      <i class="fa fa-file-text-o"></i> {{ title }}
-      <time class="timestamp">{{ date | date('F jS, Y') }}</time>
-    </h3>
+<h3 class="trailer-2">
+  <i class="fa fa-fw fa-file-text-o"></i> {{ title }}
+  <time class="timestamp">{{ date | date('F jS, Y') }}</time>
+</h3>
 
-    {{ contents | safe }}
-  </article>
-</main>
+<article class="post trailer-2">
+  {{ contents | safe }}
+</article>
 {% endblock %}

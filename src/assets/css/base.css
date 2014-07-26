@@ -58,11 +58,68 @@ code {
 /* Objects
 -------------------------------------------------- */
 
+main > h3 {
+  font-weight: 100;
+}
+
 .sidebar {
   background: #333;
   color: #fff;
-  padding: 25px 15px 1px;
-  padding-bottom: 25px;
+  padding: 15px 15px 1px;
+}
+
+.elsewhere {
+  font-size: 13px;
+  padding-top: 1px;
+}
+.elsewhere .panel-heading {
+  padding: 10px;
+  font-weight: 600;
+}
+.elsewhere .list-group-item {
+  padding: 11px 10px;
+}
+
+.identity {}
+.identity .avatar {
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+  display: block;
+}
+.identity .name {
+  font-size: 19px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.identity .name a {
+  color: #bbb;
+}
+.identity .role {
+  color: #888;
+}
+
+.projects {
+  color: inherit;
+}
+.projects .media-heading {
+  font-size: 24px;
+  margin-bottom: 18px;
+}
+.projects .media>.pull-left {
+  margin-right: 24px;
+}
+
+.post {}
+.post header {
+  border-bottom: 1px solid #aeaeac;
+}
+.post .timestamp {
+  color: #887;
+  font-size: 11px;
+  font-weight: 300;
 }
 
 @media (min-width: 768px) {
@@ -95,53 +152,9 @@ code {
   .sidebar a.list-group-item.active:hover {
     border-color: #222;
   }
-}
-
-.elsewhere {
-  font-size: 13px;
-  padding-top: 1px;
-}
-.elsewhere .panel-heading {
-  padding: 10px;
-  font-weight: 600;
-}
-.elsewhere .list-group-item {
-  padding: 11px 10px;
-}
-
-.identity {}
-.identity .avatar {
-  width: 100%;
-  max-width: 200px;
-  margin: 0 auto;
-  display: block;
-}
-.identity .name {
-  font-size: 18px;
-  font-weight: 700;
-  text-align: center;
-  margin-top: 0;
-}
-
-.projects {
-  color: inherit;
-}
-.projects .media-heading {
-  font-size: 24px;
-  margin-bottom: 18px;
-}
-.projects .media>.pull-left {
-  margin-right: 24px;
-}
-
-.post {}
-.post header {
-  border-bottom: 1px solid #aeaeac;
-}
-.post .timestamp {
-  color: #887;
-  font-size: 11px;
-  font-weight: 300;
+  .identity .name {
+    margin-bottom: 6px;
+  }
 }
 
 /* Footer
