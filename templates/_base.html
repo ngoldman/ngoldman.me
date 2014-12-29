@@ -10,23 +10,26 @@
 </head>
 <body>
 
-<header>
-  <nav>
+<header class="site-header">
+  <nav class="site-nav">
     <a class="site-title {% if section && section == 'home' %}current-page{% endif %}" href="/">Nate Goldman</a>
     <a class="site-link {% if section && section == 'projects' %}current-page{% endif %}" href="/projects/">Projects</a>
     <a class="site-link {% if section && section == 'about' %}current-page{% endif %}" href="/about/">About</a>
-    <a class="site-link" href="https://github.com/ngoldman" rel="me"><i class="fa fa-fw fa-github"></i></a>
-    <a class="site-link" href="https://twitter.com/ungoldman" rel="me"><i class="fa fa-fw fa-twitter"></i></a>
-    <a class="site-link" href="mailto:nate@ngoldman.me" rel="me"><i class="fa fa-fw fa-envelope"></i></a>
+    <div class="site-nav-right">
+      <a class="site-link" href="https://github.com/ngoldman" rel="me"><i class="fa fa-fw fa-github"></i></a>
+      <a class="site-link" href="https://twitter.com/ungoldman" rel="me"><i class="fa fa-fw fa-twitter"></i></a>
+      <a class="site-link" href="mailto:nate@ngoldman.me" rel="me"><i class="fa fa-fw fa-envelope"></i></a>
+    </div>
   </nav>
-
 </header>
 
-<main class="markdown-body">
-  {% block content %}{% endblock %}
+<main class="site-main">
+  <article class="markdown-body">
+    {% block content %}{% endblock %}
+  </article>
 </main>
 
-<footer>
+<footer class="site-footer">
   <p>ツ</p>
 </footer>
 
