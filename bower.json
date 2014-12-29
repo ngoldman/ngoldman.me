@@ -1,8 +1,0 @@
-{
-  "name": "ngoldman.me",
-  "private": true,
-  "dependencies": {
-    "Bootflat": "~2.0.3",
-    "fontawesome": "~4.1.0"
-  }
-}
