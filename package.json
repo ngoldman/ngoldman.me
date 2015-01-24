@@ -1,6 +1,6 @@
 {
   "name": "ngoldman.me",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "ngoldman has a website",
   "main": "index.js",
   "private": "true",
