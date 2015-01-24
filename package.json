@@ -1,13 +1,13 @@
 {
   "name": "ngoldman.me",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "ngoldman has a website",
   "main": "index.js",
   "private": "true",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "./node_modules/metalsmith/bin/metalsmith",
-    "start": "npm run build && node index.js"
+    "build": "node scripts/build.js",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -22,23 +22,12 @@
     "url": "https://github.com/ngoldman/ngoldman.me/issues"
   },
   "homepage": "https://github.com/ngoldman/ngoldman.me",
-  "dependencies": {
-    "director": "~1.2.2",
-    "ecstatic": "~0.4.13",
-    "metalsmith": "^0.9.0",
-    "metalsmith-assets": "0.0.1",
-    "metalsmith-clean": "0.0.0",
-    "metalsmith-collections": "^0.4.1",
-    "metalsmith-drafts": "0.0.1",
-    "metalsmith-excerpts": "^1.0.0",
-    "metalsmith-markdown": "^0.2.1",
-    "metalsmith-permalinks": "^0.3.2",
-    "metalsmith-templates": "^0.5.2",
-    "swig": "^1.4.1",
-    "union": "~0.3.8"
+  "devDependencies": {
+    "markdown-it": "^3.0.2"
   },
-  "engines": {
-    "node": "0.10.x",
-    "npm": "1.4.x"
+  "dependencies": {
+    "director": "^1.2.7",
+    "ecstatic": "^0.5.8",
+    "union": "^0.4.4"
   }
 }
