@@ -1,3 +1,5 @@
+![](./photo.png)
+
 # ngoldman
 
 <a href="https://twitter.com/ungoldman" rel="me">tw</a> •
