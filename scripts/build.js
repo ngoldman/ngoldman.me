@@ -16,7 +16,7 @@ fs.writeFile('index.html', header + index + footer, function (err) {
   console.log('built index.html');
 });
 
-var projects = '<!DOCTYPE html><html lang="en"><head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1"> <title>ngoldman haus | projeks</title> <link rel="stylesheet" href="http://code.ngoldman.me/style.css/style.css"> <style>.container{margin: 3rem auto; max-width: 666px; padding: 13px;}</style> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css"> <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script> <script>hljs.initHighlightingOnLoad();</script></head><body><main class="container markdown-body">';
+var projects = '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>ngoldman projects</title><link rel="stylesheet" href="http://code.ngoldman.me/style.css/style.css"><style>.container{margin: 3rem auto; max-width: 666px; padding: 16px;} .markdown-body h1, .markdown-body h2 { border-bottom: none; } .markdown-body a, .markdown-body a:hover { color: #c33; }</style></head><body><main class="container markdown-body"><h1><a href="/">ngoldman</a> projects</h1>';
 projects += md.render(fs.readFileSync('./projects/README.md', opts));
 projects += '</main></body></html>';
 
