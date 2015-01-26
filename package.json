@@ -1,6 +1,6 @@
 {
   "name": "ngoldman.me",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "ngoldman has a website",
   "main": "index.js",
   "private": "true",
@@ -29,5 +29,8 @@
     "director": "^1.2.7",
     "ecstatic": "^0.5.8",
     "union": "^0.4.4"
+  },
+  "engines": {
+    "node": "0.10.x"
   }
 }
