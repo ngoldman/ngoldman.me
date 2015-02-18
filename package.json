@@ -1,36 +1,37 @@
 {
   "name": "ngoldman.me",
-  "version": "0.1.2",
   "description": "ngoldman has a website",
-  "main": "index.js",
-  "private": "true",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node scripts/build.js",
-    "start": "node index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/ngoldman/ngoldman.me.git"
-  },
-  "keywords": [
-    "indieweb"
-  ],
+  "version": "0.1.2",
   "author": "Nate Goldman <nate@ngoldman.me>",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/ngoldman/ngoldman.me/issues"
-  },
-  "homepage": "https://github.com/ngoldman/ngoldman.me",
-  "devDependencies": {
-    "markdown-it": "^3.0.2"
   },
   "dependencies": {
     "director": "^1.2.7",
     "ecstatic": "^0.5.8",
     "union": "^0.4.4"
   },
+  "devDependencies": {
+    "markdown-it": "^3.0.2",
+    "standard": "^2.6.3"
+  },
   "engines": {
     "node": "0.10.x"
+  },
+  "homepage": "https://github.com/ngoldman/ngoldman.me",
+  "keywords": [
+    "indieweb"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "private": "true",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ngoldman/ngoldman.me.git"
+  },
+  "scripts": {
+    "build": "node scripts/build.js",
+    "start": "node index.js",
+    "test": "standard"
   }
 }
