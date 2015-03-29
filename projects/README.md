@@ -1,52 +1,66 @@
-## [Code for Portland](http://codeforportland.org)
+<header class="header">
 
-A [Code for America brigade](http://codeforamerica.org/brigade/). We host civic hacking events, work on civic tech projects with municipal partners and non-profits, and advocate for open data.
+[![](../photo.png)](../)
 
-Currently we're focusing on [housing](https://github.com/CodeForPortland/housing).
+# Projects
 
-* [Visit the site](http://codeforportland.org)
-* [Join our Meetup group](http://meetup.com/code-for-portland)
-* [View our Github projects](http://github.com/codeforportland)
-* [Follow us on Twitter](http://twitter.com/codeforportland)
+</header>
 
-## [Geobin.io](http://geobin.io)
+## Orgs
 
-A web application that allows you to inspect HTTP requests with geographic data. [Ryan Arana](https://github.com/aranasaurus) and [Josh Yaganeh](https://github.com/jyaganeh) are now the primary maintainers.
+### [`Esri PDX`](http://pdx.esri.com)
 
-* [Visit the site](http://geobin.io)
-* [Read the docs](https://github.com/esripdx/geobin.io#geobin)
-* [View the source](https://github.com/esripdx/geobin.io)
+A small team of geniuses brought together by [Amber Case](http://caseorganic.com/) and [Aaron Parecki](https://aaronparecki.com/) working on web and mobile geospatial tools. I work there as a web developer and designer. My secret agenda is to bring [Open Web](http://codinginparadise.org/weblog/2008/04/whats-open-web-and-why-is-it-important.html) values and processes to the monolithic mapping software corporation that we serve.
 
-## [jekyll-reveal](http://ngoldman.github.io/jekyll-reveal/)
+### [`Code for Portland`](http://codeforportland.org)
 
-A [Jekyll](http://jekyllrb.com) template for quickly writing slides in markdown. Based on [mdo](https://github.com/mdo)'s [Lanyon](http://lanyon.getpoole.com) Jekyll theme and [hakimel](https://github.com/hakimel)'s [reveal.js](http://lab.hakim.se/reveal-js) HTML presentation framework.
+A [Code for America brigade](http://codeforamerica.org/brigade/) I started with help from [Erica Lauer Vose](https://twitter.com/elauervose), [Nathan Wittstock](https://twitter.com/milkandtang), and [Mele Sax-Barnett](http://pdxmele.com/) in 2014. We host civic hacking events, work on civic tech projects with municipal partners and non-profits, and advocate for open data. Currently we're focusing on [housing](https://github.com/CodeForPortland/housing).
 
-* [Visit the site](http://ngoldman.github.io/jekyll-reveal/)
-* [View the source](https://github.com/ngoldman/jekyll-reveal)
+## Services
 
-## [gh-release](http://github.com/ngoldman/gh-release/)
+### [`geobin.io`](http://geobin.io)
 
-Command-line utility for creating a release for a node package on github. Part of a larger effort to create [versioneer](https://github.com/ngoldman/versioneer/issues/1).
+A web application that allows you to inspect HTTP requests with geographic data. Built at the [Esri Portland R&D Center](http://pdx.esri.com) with [Ryan Arana](https://github.com/aranasaurus), [Josh Yaganeh](https://github.com/jyaganeh), and [Court Fowler](https://github.com/courtf).
 
-* [View the source](http://github.com/ngoldman/gh-release/)
+## Software
 
-## [style.css](http://ngoldman.github.com/style.css/)
+### [`Geotrigger Service`](https://developers.arcgis.com/en/features/geotrigger-service/)
 
-An attempt at creating a set of independent, complementary style modules.
+A web platform and set of SDKs for adding [geofencing](http://en.wikipedia.org/wiki/Geo-fence) capabilities to mobile applications. I helped build supporting software for it like the [Geotrigger Editor](https://developers.arcgis.com/geotrigger-service/guide/geotrigger-editor/) and [Geotrigger Faker](https://developers.arcgis.com/geotrigger-service/guide/geotrigger-faker/).
 
-* [Visit the site](http://ngoldman.github.com/style.css/)
-* [View the source](http://github.com/ngoldman/style.css/)
+### [`Koop`](http://github.com/esri/koop)
 
-## [gfm.css](http://ngoldman.github.com/gfm.css/)
+Working with [Chris Helm](https://github.com/chelm) and the [Esri DC R&D Center](http://dc.esri.com/) to create a modular [ETL](http://en.wikipedia.org/wiki/Extract,_transform,_load) engine for viewing and downloading open spatial data from different providers and formats. [Pull requests](http://readwrite.com/2014/07/02/github-pull-request-etiquette) welcome.
 
-An unofficial port of github's markdown style.
+### [`gh-release`](http://github.com/ngoldman/gh-release/)
 
-* [Read the docs](http://ngoldman.github.io/gfm.css/)
-* [View the source](http://github.com/ngoldman/gfm.css/)
+A command-line utility for creating a [release](https://github.com/blog/1547-release-your-software) for a node package on github that I've been working on with [Bret Comnes](http://bret.io/about/) and [Paul C Pederson](http://paulcpederson.com/). Part of a larger effort to create [versioneer](https://github.com/ngoldman/versioneer/issues/1).
 
-## [TinyStore](http://ngoldman.github.io/tinystore/)
+### [`jekyll-reveal`](http://ngoldman.github.io/jekyll-reveal/)
 
-A javascript web storage library.
+A [Jekyll](http://jekyllrb.com) template for quickly writing slides in markdown. Based on [Mark Otto](https://github.com/mdo)'s [Lanyon](http://lanyon.getpoole.com) Jekyll theme and [Hakim El Hattab](https://github.com/hakimel)'s [reveal.js](http://lab.hakim.se/reveal-js) HTML presentation framework.
 
-* [Read the docs](http://ngoldman.github.io/tinystore/)
-* [View the source](http://github.com/ngoldman/tinystore/)
+### [`TinyStore`](http://ngoldman.github.io/tinystore/)
+
+A javascript [web storage](http://en.wikipedia.org/wiki/Web_storage) library geared towards easily setting and getting objects in [`localStorage`](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) and [`sessionStorage`](https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage).
+
+### [`style.css`](http://ngoldman.github.com/style.css/)
+
+An attempt at creating a set of independent and complementary style modules. So far, includes [gfm.css](http://ngoldman.github.com/gfm.css/) and [top-bar.css](http://ngoldman.github.com/top-bar.css/).
+
+*Many more small projects at [github.com/ngoldman](https://github.com/ngoldman?tab=repositories)*
+
+## Articles
+
+Sometimes I write things, mostly about the internet and open source software.
+
+* [Deploy your own PaaS](https://gist.github.com/ngoldman/7287753)
+* [Be a Good Open Source Shepherd](https://gist.github.com/ngoldman/88ab15a3eeadcb06103b)
+
+## Advice?
+
+I'm also inexplainably an advisor for some great organizations and projects.
+
+* [`Girl Develop It Portland`](https://www.girldevelopit.com/chapters/portland)
+* [`Hack Oregon`](http://www.hackoregon.org/)
+* [`OpenTrails`](http://www.codeforamerica.org/specifications/trails/)

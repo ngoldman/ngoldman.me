@@ -1,46 +1,80 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>ngoldman projects</title><link rel="stylesheet" href="http://code.ngoldman.me/style.css/style.css"><style>.container{margin: 3rem auto; max-width: 666px; padding: 16px;} .markdown-body h1, .markdown-body h2 { border-bottom: none; } .markdown-body a, .markdown-body a:hover { color: #f30; }</style></head><body><main class="container markdown-body"><h1><a href="/">ngoldman</a> projects</h1><h2><a href="http://codeforportland.org">Code for Portland</a></h2>
-<p>A <a href="http://codeforamerica.org/brigade/">Code for America brigade</a>. We host civic hacking events, work on civic tech projects with municipal partners and non-profits, and advocate for open data.</p>
-<p>Currently we’re focusing on <a href="https://github.com/CodeForPortland/housing">housing</a>.</p>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ngoldman haus</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="http://code.ngoldman.me/style.css/style.css">
+  <style>
+    .markdown-body {
+      margin: 3rem auto;
+      max-width: 480px;
+      padding: 16px;
+    }
+    .markdown-body .header {
+      font-family: monospace;
+      font-size: 22px;
+      text-align: center;
+      color: #000;
+    }
+    .markdown-body .header h1 {
+      font-family: monospace;
+      font-size: 24px;
+    }
+    .markdown-body a {
+      color: #f30;
+      transition: all 0.5s ease;
+      text-decoration: none;
+    }
+    .markdown-body a:hover {
+      color: #f30;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<main class="markdown-body">
+<header class="header">
+<p><a href="../"><img src="../photo.png" alt=""></a></p>
+<h1>Projects</h1>
+</header>
+<h2>Orgs</h2>
+<h3><a href="http://pdx.esri.com"><code>Esri PDX</code></a></h3>
+<p>A small team of geniuses brought together by <a href="http://caseorganic.com/">Amber Case</a> and <a href="https://aaronparecki.com/">Aaron Parecki</a> working on web and mobile geospatial tools. I work there as a web developer and designer. My secret agenda is to bring <a href="http://codinginparadise.org/weblog/2008/04/whats-open-web-and-why-is-it-important.html">Open Web</a> values and processes to the monolithic mapping software corporation that we serve.</p>
+<h3><a href="http://codeforportland.org"><code>Code for Portland</code></a></h3>
+<p>A <a href="http://codeforamerica.org/brigade/">Code for America brigade</a> I started with help from <a href="https://twitter.com/elauervose">Erica Lauer Vose</a>, <a href="https://twitter.com/milkandtang">Nathan Wittstock</a>, and <a href="http://pdxmele.com/">Mele Sax-Barnett</a> in 2014. We host civic hacking events, work on civic tech projects with municipal partners and non-profits, and advocate for open data. Currently we’re focusing on <a href="https://github.com/CodeForPortland/housing">housing</a>.</p>
+<h2>Services</h2>
+<h3><a href="http://geobin.io"><code>geobin.io</code></a></h3>
+<p>A web application that allows you to inspect HTTP requests with geographic data. Built at the <a href="http://pdx.esri.com">Esri Portland R&amp;D Center</a> with <a href="https://github.com/aranasaurus">Ryan Arana</a>, <a href="https://github.com/jyaganeh">Josh Yaganeh</a>, and <a href="https://github.com/courtf">Court Fowler</a>.</p>
+<h2>Software</h2>
+<h3><a href="https://developers.arcgis.com/en/features/geotrigger-service/"><code>Geotrigger Service</code></a></h3>
+<p>A web platform and set of SDKs for adding <a href="http://en.wikipedia.org/wiki/Geo-fence">geofencing</a> capabilities to mobile applications. I helped build supporting software for it like the <a href="https://developers.arcgis.com/geotrigger-service/guide/geotrigger-editor/">Geotrigger Editor</a> and <a href="https://developers.arcgis.com/geotrigger-service/guide/geotrigger-faker/">Geotrigger Faker</a>.</p>
+<h3><a href="http://github.com/esri/koop"><code>Koop</code></a></h3>
+<p>Working with <a href="https://github.com/chelm">Chris Helm</a> and the <a href="http://dc.esri.com/">Esri DC R&amp;D Center</a> to create a modular <a href="http://en.wikipedia.org/wiki/Extract,_transform,_load">ETL</a> engine for viewing and downloading open spatial data from different providers and formats. <a href="http://readwrite.com/2014/07/02/github-pull-request-etiquette">Pull requests</a> welcome.</p>
+<h3><a href="http://github.com/ngoldman/gh-release/"><code>gh-release</code></a></h3>
+<p>A command-line utility for creating a <a href="https://github.com/blog/1547-release-your-software">release</a> for a node package on github that I’ve been working on with <a href="http://bret.io/about/">Bret Comnes</a> and <a href="http://paulcpederson.com/">Paul C Pederson</a>. Part of a larger effort to create <a href="https://github.com/ngoldman/versioneer/issues/1">versioneer</a>.</p>
+<h3><a href="http://ngoldman.github.io/jekyll-reveal/"><code>jekyll-reveal</code></a></h3>
+<p>A <a href="http://jekyllrb.com">Jekyll</a> template for quickly writing slides in markdown. Based on <a href="https://github.com/mdo">Mark Otto</a>'s <a href="http://lanyon.getpoole.com">Lanyon</a> Jekyll theme and <a href="https://github.com/hakimel">Hakim El Hattab</a>'s <a href="http://lab.hakim.se/reveal-js">reveal.js</a> HTML presentation framework.</p>
+<h3><a href="http://ngoldman.github.io/tinystore/"><code>TinyStore</code></a></h3>
+<p>A javascript <a href="http://en.wikipedia.org/wiki/Web_storage">web storage</a> library geared towards easily setting and getting objects in <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage"><code>localStorage</code></a> and <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage"><code>sessionStorage</code></a>.</p>
+<h3><a href="http://ngoldman.github.com/style.css/"><code>style.css</code></a></h3>
+<p>An attempt at creating a set of independent and complementary style modules. So far, includes <a href="http://ngoldman.github.com/gfm.css/">gfm.css</a> and <a href="http://ngoldman.github.com/top-bar.css/">top-bar.css</a>.</p>
+<p><em>Many more small projects at <a href="https://github.com/ngoldman?tab=repositories">github.com/ngoldman</a></em></p>
+<h2>Articles</h2>
+<p>Sometimes I write things, mostly about the internet and open source software.</p>
 <ul>
-<li><a href="http://codeforportland.org">Visit the site</a></li>
-<li><a href="http://meetup.com/code-for-portland">Join our Meetup group</a></li>
-<li><a href="http://github.com/codeforportland">View our Github projects</a></li>
-<li><a href="http://twitter.com/codeforportland">Follow us on Twitter</a></li>
+<li><a href="https://gist.github.com/ngoldman/7287753">Deploy your own PaaS</a></li>
+<li><a href="https://gist.github.com/ngoldman/88ab15a3eeadcb06103b">Be a Good Open Source Shepherd</a></li>
 </ul>
-<h2><a href="http://geobin.io">Geobin.io</a></h2>
-<p>A web application that allows you to inspect HTTP requests with geographic data. <a href="https://github.com/aranasaurus">Ryan Arana</a> and <a href="https://github.com/jyaganeh">Josh Yaganeh</a> are now the primary maintainers.</p>
+<h2>Advice?</h2>
+<p>I’m also inexplainably an advisor for some great organizations and projects.</p>
 <ul>
-<li><a href="http://geobin.io">Visit the site</a></li>
-<li><a href="https://github.com/esripdx/geobin.io#geobin">Read the docs</a></li>
-<li><a href="https://github.com/esripdx/geobin.io">View the source</a></li>
+<li><a href="https://www.girldevelopit.com/chapters/portland"><code>Girl Develop It Portland</code></a></li>
+<li><a href="http://www.hackoregon.org/"><code>Hack Oregon</code></a></li>
+<li><a href="http://www.codeforamerica.org/specifications/trails/"><code>OpenTrails</code></a></li>
 </ul>
-<h2><a href="http://ngoldman.github.io/jekyll-reveal/">jekyll-reveal</a></h2>
-<p>A <a href="http://jekyllrb.com">Jekyll</a> template for quickly writing slides in markdown. Based on <a href="https://github.com/mdo">mdo</a>'s <a href="http://lanyon.getpoole.com">Lanyon</a> Jekyll theme and <a href="https://github.com/hakimel">hakimel</a>'s <a href="http://lab.hakim.se/reveal-js">reveal.js</a> HTML presentation framework.</p>
-<ul>
-<li><a href="http://ngoldman.github.io/jekyll-reveal/">Visit the site</a></li>
-<li><a href="https://github.com/ngoldman/jekyll-reveal">View the source</a></li>
-</ul>
-<h2><a href="http://github.com/ngoldman/gh-release/">gh-release</a></h2>
-<p>Command-line utility for creating a release for a node package on github. Part of a larger effort to create <a href="https://github.com/ngoldman/versioneer/issues/1">versioneer</a>.</p>
-<ul>
-<li><a href="http://github.com/ngoldman/gh-release/">View the source</a></li>
-</ul>
-<h2><a href="http://ngoldman.github.com/style.css/">style.css</a></h2>
-<p>An attempt at creating a set of independent, complementary style modules.</p>
-<ul>
-<li><a href="http://ngoldman.github.com/style.css/">Visit the site</a></li>
-<li><a href="http://github.com/ngoldman/style.css/">View the source</a></li>
-</ul>
-<h2><a href="http://ngoldman.github.com/gfm.css/">gfm.css</a></h2>
-<p>An unofficial port of github’s markdown style.</p>
-<ul>
-<li><a href="http://ngoldman.github.io/gfm.css/">Read the docs</a></li>
-<li><a href="http://github.com/ngoldman/gfm.css/">View the source</a></li>
-</ul>
-<h2><a href="http://ngoldman.github.io/tinystore/">TinyStore</a></h2>
-<p>A javascript web storage library.</p>
-<ul>
-<li><a href="http://ngoldman.github.io/tinystore/">Read the docs</a></li>
-<li><a href="http://github.com/ngoldman/tinystore/">View the source</a></li>
-</ul>
-</main></body></html>
+</main>
+</body>
+</html>
