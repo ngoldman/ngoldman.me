@@ -1,8 +1,22 @@
-<header class="header">
+<header class="colophon">
 
 [![](../photo.png)](../)
 
-# Projects
+# Nate Goldman
+
+<small>
+{ **pages**: [
+[index](/), **[projects](/projects)**
+] }
+</small>
+
+<small>
+{ **@**: [
+<a href="https://twitter.com/ungoldman" rel="me">twit</a>,
+<a href="https://github.com/ngoldman" rel="me">git</a>,
+<a href="mailto:nate@ngoldman.me" rel="me">mail</a>
+] }
+</small>
 
 </header>
 
@@ -61,6 +75,6 @@ Sometimes I write things, mostly about the internet and open source software.
 
 I'm also inexplainably an advisor for some great organizations and projects.
 
-* [`Girl Develop It Portland`](https://www.girldevelopit.com/chapters/portland)
-* [`Hack Oregon`](http://www.hackoregon.org/)
-* [`OpenTrails`](http://www.codeforamerica.org/specifications/trails/)
+* [Girl Develop It Portland](https://www.girldevelopit.com/chapters/portland)
+* [Hack Oregon](http://www.hackoregon.org/)
+* [OpenTrails](http://www.codeforamerica.org/specifications/trails/)

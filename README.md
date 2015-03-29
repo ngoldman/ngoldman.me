@@ -1,4 +1,4 @@
-<header class="header">
+<header class="colophon">
 
 ![](./photo.png)
 
