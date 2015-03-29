@@ -64,6 +64,12 @@ An attempt at creating a set of independent and complementary style modules. So 
 
 *Many more small projects at [github.com/ngoldman](https://github.com/ngoldman?tab=repositories)*
 
+## Sites
+
+### [`ArcGIS for Developers`](https://developers.arcgis.com)
+
+I'm responsible for a good chunk of the design and development of a documentation and management site for developers that's part of Esri's [ArcGIS web platform](http://www.arcgis.com/features/), along with [Paul C Pederson](http://ppaulcpederson.com), [Nikolas Wise](http://nikolas.io/), [Rachel Nehmer](https://github.com/kneemer), [Manny Lopez](https://twitter.com/himannylopez), and our fearless leader [Patrick Arlt](https://github.com/patrickarlt/).
+
 ## Articles
 
 Sometimes I write things, mostly about the internet and open source software.
