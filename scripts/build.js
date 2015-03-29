@@ -12,7 +12,7 @@ var pages = []
 pages.push({
   path: 'index.html',
   body: md.render(fs.readFileSync('./README.md', opts))
-},{
+}, {
   path: 'projects/index.html',
   body: md.render(fs.readFileSync('./projects/README.md', opts))
 })
