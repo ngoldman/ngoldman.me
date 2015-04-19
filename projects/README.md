@@ -1,25 +1,3 @@
-<header class="colophon">
-
-[![](../photo.png)](../)
-
-# Nate Goldman
-
-<small>
-{ **pages**: [
-[index](/), **[projects](/projects)**
-] }
-</small>
-
-<small>
-{ **@**: [
-<a href="https://twitter.com/ungoldman" rel="me">twit</a>,
-<a href="https://github.com/ngoldman" rel="me">git</a>,
-<a href="mailto:nate@ngoldman.me" rel="me">mail</a>
-] }
-</small>
-
-</header>
-
 ## Projects
 
 ### [`geobin.io`](http://geobin.io)
@@ -36,16 +14,9 @@ A web platform and set of SDKs for adding [geofencing](http://en.wikipedia.org/w
 
 ### [`ArcGIS for Developers`](https://developers.arcgis.com)
 
-I'm responsible for a good chunk of the design and development of a documentation and management site for developers that's part of Esri's [ArcGIS web platform](http://www.arcgis.com/features/), along with [Paul C Pederson](http://ppaulcpederson.com), [Nikolas Wise](http://nikolas.io/), [Rachel Nehmer](https://github.com/kneemer), [Manny Lopez](https://twitter.com/himannylopez), and our fearless leader [Patrick Arlt](https://github.com/patrickarlt/).
+I work on the design and development of a documentation site for developers that need to use Esri's [ArcGIS web platform](http://www.arcgis.com/features/), along with [Paul C Pederson](http://ppaulcpederson.com), [Nikolas Wise](http://nikolas.io/), [Rachel Nehmer](https://github.com/kneemer), [Manny Lopez](https://twitter.com/himannylopez), and our fearless leader [Patrick Arlt](https://github.com/patrickarlt/).
 
 *Many more small projects at [github.com/ngoldman](https://github.com/ngoldman?tab=repositories)*
-
-## Articles
-
-Sometimes I write things, mostly about the internet and open source software.
-
-* [Deploy your own PaaS](https://gist.github.com/ngoldman/7287753)
-* [Be a Good Open Source Shepherd](https://gist.github.com/ngoldman/88ab15a3eeadcb06103b)
 
 ## Orgs
 
@@ -57,10 +28,9 @@ A [Code for America brigade](http://codeforamerica.org/brigade/) I started with 
 
 A small team of geniuses brought together by [Amber Case](http://caseorganic.com/) and [Aaron Parecki](https://aaronparecki.com/) working on web and mobile geospatial tools. I work there as a web developer and designer. My secret agenda is to bring [Open Web](http://codinginparadise.org/weblog/2008/04/whats-open-web-and-why-is-it-important.html) values and processes to the monolithic mapping software corporation that we serve.
 
-## Advice?
+## Articles
 
-I'm also inexplainably an occasional advisor and helper for some great organizations and projects.
+Sometimes I write things, mostly about the internet and open source software.
 
-* [Hack Oregon](http://www.hackoregon.org/)
-* [Girl Develop It Portland](https://www.girldevelopit.com/chapters/portland)
-* [OpenTrails](http://www.codeforamerica.org/specifications/trails/)
+* [Deploy your own PaaS](https://gist.github.com/ngoldman/7287753)
+* [Be a Good Open Source Shepherd](https://gist.github.com/ngoldman/88ab15a3eeadcb06103b)

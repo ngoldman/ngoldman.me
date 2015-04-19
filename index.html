@@ -6,17 +6,27 @@
   <meta name="viewport" content="width=device-width, user-scalable=no">
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="stylesheet" href="http://code.ngoldman.me/style.css/style.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <style>
-    .markdown-body {
-      margin: 3rem auto;
+    html {
+      background: #fff;
+    }
+    .page {
+      margin: 1rem auto 3rem;
       max-width: 480px;
-      padding: 16px;
+    }
+    .ghostman {
+      float: left;
+      margin-right: 10px;
+      height: 30px;
+      margin-top: -5px;
     }
     .markdown-body .colophon {
       font-family: monospace;
       font-size: 22px;
       text-align: center;
       color: #000;
+      margin: auto;
     }
     .markdown-body .colophon h1 {
       font-family: monospace;
@@ -35,19 +45,25 @@
 </head>
 <body>
 
-<main class="markdown-body">
+<main class="page">
+
+<nav class="top-bar">
+  <a href="/" class="top-bar-title"><img src="/photo.jpg" class="ghostman"> Nate Goldman</a>
+  <a href="/projects" class="top-bar-link">projects</a>
+
+  <div class="top-bar-right">
+    <a class="top-bar-link" href="https://twitter.com/ungoldman" rel="me"><i class="fa fa-twitter"></i></a>
+    <a class="top-bar-link" href="https://github.com/ngoldman" rel="me"><i class="fa fa-github-alt"></i></a>
+  </div>
+</nav>
+
+<section class="markdown-body">
 <header class="colophon">
 <p><img src="./photo.png" alt=""></p>
 <h1>Nate Goldman</h1>
 <p>is an <a href="http://codinginparadise.org/weblog/2008/04/whats-open-web-and-why-is-it-important.html">Open Web</a> Software Developer who works on a handful of <a href="./projects/">projects</a></p>
-<p><small>
-{ <strong>@</strong>: [
-<a href="https://twitter.com/ungoldman" rel="me">twit</a>,
-<a href="https://github.com/ngoldman" rel="me">git</a>,
-<a href="mailto:nate@ngoldman.me" rel="me">mail</a>
-] }
-</small></p>
 </header>
+</section>
 </main>
 </body>
 </html>
