@@ -6,20 +6,21 @@
   <meta name="viewport" content="width=device-width, user-scalable=no">
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="stylesheet" href="http://code.ngoldman.me/style.css/style.css">
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <style>
     html {
       background: #fff;
     }
     .page {
-      margin: 1rem auto 3rem;
+      margin: 3rem auto;
       max-width: 480px;
     }
     .ghostman {
-      float: left;
-      margin-right: 10px;
-      height: 30px;
-      margin-top: -5px;
+      display: block;
+      text-align: center;
+      margin: 0 auto;
+    }
+    .ghostman img {
+      max-width: 100%;
     }
     .markdown-body .colophon {
       font-family: monospace;
@@ -47,18 +48,24 @@
 
 <main class="page">
 
-<nav class="top-bar">
-  <a href="/" class="top-bar-title"><img src="/photo.jpg" class="ghostman"> Nate Goldman</a>
-  <a href="/projects" class="top-bar-link">projects</a>
-
-  <div class="top-bar-right">
-    <a class="top-bar-link" href="https://twitter.com/ungoldman" rel="me"><i class="fa fa-twitter"></i></a>
-    <a class="top-bar-link" href="https://github.com/ngoldman" rel="me"><i class="fa fa-github-alt"></i></a>
-  </div>
-</nav>
+<a href="/" class="ghostman"><img src="/photo.png"></a>
 
 <section class="markdown-body">
-<h2>Projects</h2>
+<header class="colophon">
+<h1>Projects</h1>
+</header>
+<h2>orgs</h2>
+<h3><a href="http://codeforportland.org"><code>Code for Portland</code></a></h3>
+<p>A <a href="http://codeforamerica.org/brigade/">Code for America brigade</a> I started with help from <a href="https://twitter.com/elauervose">Erica Lauer Vose</a>, <a href="https://twitter.com/milkandtang">Nathan Wittstock</a>, and <a href="http://pdxmele.com/">Mele Sax-Barnett</a> in 2014. We host civic hacking events, work on civic tech projects with municipal partners and non-profits, and advocate for open data. Currently we’re focusing on <a href="https://github.com/CodeForPortland/housing">housing</a>.</p>
+<h3><a href="http://pdx.esri.com"><code>Esri PDX</code></a></h3>
+<p>A small team of geniuses brought together by <a href="http://caseorganic.com/">Amber Case</a> and <a href="https://aaronparecki.com/">Aaron Parecki</a> working on web and mobile geospatial tools. I work there as a web developer and designer. My secret agenda is to bring <a href="http://codinginparadise.org/weblog/2008/04/whats-open-web-and-why-is-it-important.html">Open Web</a> values and processes to the monolithic mapping software corporation that we serve.</p>
+<h2>articles</h2>
+<p>Sometimes I write things, mostly about the internet and open source software.</p>
+<ul>
+<li><a href="https://gist.github.com/ngoldman/7287753">Deploy your own PaaS</a></li>
+<li><a href="https://gist.github.com/ngoldman/88ab15a3eeadcb06103b">Be a Good Open Source Shepherd</a></li>
+</ul>
+<h2>programming</h2>
 <h3><a href="http://geobin.io"><code>geobin.io</code></a></h3>
 <p>A web application that allows you to inspect HTTP requests with geographic data. Built at the <a href="http://pdx.esri.com">Esri Portland R&amp;D Center</a> with <a href="https://github.com/aranasaurus">Ryan Arana</a>, <a href="https://github.com/jyaganeh">Josh Yaganeh</a>, and <a href="https://github.com/courtf">Court Fowler</a>.</p>
 <h3><a href="http://github.com/esri/koop"><code>Koop</code></a></h3>
@@ -68,18 +75,9 @@
 <h3><a href="https://developers.arcgis.com"><code>ArcGIS for Developers</code></a></h3>
 <p>I work on the design and development of a documentation site for developers that need to use Esri’s <a href="http://www.arcgis.com/features/">ArcGIS web platform</a>, along with <a href="http://ppaulcpederson.com">Paul C Pederson</a>, <a href="http://nikolas.io/">Nikolas Wise</a>, <a href="https://github.com/kneemer">Rachel Nehmer</a>, <a href="https://twitter.com/himannylopez">Manny Lopez</a>, and our fearless leader <a href="https://github.com/patrickarlt/">Patrick Arlt</a>.</p>
 <p><em>Many more small projects at <a href="https://github.com/ngoldman?tab=repositories">github.com/ngoldman</a></em></p>
-<h2>Orgs</h2>
-<h3><a href="http://codeforportland.org"><code>Code for Portland</code></a></h3>
-<p>A <a href="http://codeforamerica.org/brigade/">Code for America brigade</a> I started with help from <a href="https://twitter.com/elauervose">Erica Lauer Vose</a>, <a href="https://twitter.com/milkandtang">Nathan Wittstock</a>, and <a href="http://pdxmele.com/">Mele Sax-Barnett</a> in 2014. We host civic hacking events, work on civic tech projects with municipal partners and non-profits, and advocate for open data. Currently we’re focusing on <a href="https://github.com/CodeForPortland/housing">housing</a>.</p>
-<h3><a href="http://pdx.esri.com"><code>Esri PDX</code></a></h3>
-<p>A small team of geniuses brought together by <a href="http://caseorganic.com/">Amber Case</a> and <a href="https://aaronparecki.com/">Aaron Parecki</a> working on web and mobile geospatial tools. I work there as a web developer and designer. My secret agenda is to bring <a href="http://codinginparadise.org/weblog/2008/04/whats-open-web-and-why-is-it-important.html">Open Web</a> values and processes to the monolithic mapping software corporation that we serve.</p>
-<h2>Articles</h2>
-<p>Sometimes I write things, mostly about the internet and open source software.</p>
-<ul>
-<li><a href="https://gist.github.com/ngoldman/7287753">Deploy your own PaaS</a></li>
-<li><a href="https://gist.github.com/ngoldman/88ab15a3eeadcb06103b">Be a Good Open Source Shepherd</a></li>
-</ul>
 </section>
+<a href="https://twitter.com/ungoldman" rel="me"></a>
+<a href="https://github.com/ngoldman" rel="me"></a>
 </main>
 </body>
 </html>
