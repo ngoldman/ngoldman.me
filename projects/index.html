@@ -18,6 +18,7 @@
       display: block;
       text-align: center;
       margin: 0 auto;
+      user-select: none;
     }
     .ghostman img {
       max-width: 100%;
@@ -42,13 +43,29 @@
       color: #f30;
       text-decoration: underline;
     }
+    .canvas {
+      display: block;
+      border-radius: 125px;
+      margin: 0 auto -230px;
+    }
+    .noselect {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      cursor: crosshair;
+    }
   </style>
 </head>
 <body>
 
 <main class="page">
 
-<a href="/" class="ghostman"><img src="/photo.png"></a>
+<canvas class="canvas noselect" width="222" height="222"></canvas>
+
+<a href="/" class="ghostman noselect"><img src="/photo.png"></a>
 
 <section class="markdown-body">
 <header class="colophon">
@@ -79,5 +96,6 @@
 <a href="https://twitter.com/ungoldman" rel="me"></a>
 <a href="https://github.com/ngoldman" rel="me"></a>
 </main>
+<script src="/scripts/particles.js"></script>
 </body>
 </html>
