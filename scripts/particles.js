@@ -6,14 +6,14 @@ var canvas = document.querySelector("canvas"),
     context = canvas.getContext("2d"),
     width = canvas.width,
     height = canvas.height,
-    radius = 0,
+    radius = 1,
     minDistance = 0,
     maxDistance = 23,
     minDistance2 = minDistance * minDistance,
     maxDistance2 = maxDistance * maxDistance;
 
 var tau = 2 * Math.PI,
-    n = 42,
+    n = 13,
     particles = new Array(n);
 
 for (var i = 0; i < n; ++i) {
@@ -66,7 +66,7 @@ timer.timer(function(elapsed) {
           dy = pi.y - pj.y,
           d2 = dx * dx + dy * dy;
       if (d2 < maxDistance2) {
-        context.globalAlpha = d2 > minDistance2 ? (maxDistance2 - d2) / (maxDistance2 - minDistance2) : 1;
+        context.globalAlpha = d2 > minDistance2 ? (maxDistance2 - d2) / (maxDistance2 - minDistance2) : .1;
         context.beginPath();
         context.moveTo(pi.x, pi.y);
         context.lineTo(pj.x, pj.y);
