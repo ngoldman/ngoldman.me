@@ -4,39 +4,24 @@
 
 </header>
 
-## orgs
+## current
 
-### [`Code for Portland`](http://codeforportland.org)
+### [`Koop`](http://koopjs.github.io/)
 
-A [Code for America brigade](http://codeforamerica.org/brigade/) I started with help from [Erica Lauer Vose](https://twitter.com/elauervose), [Nathan Wittstock](https://twitter.com/milkandtang), and [Mele Sax-Barnett](http://pdxmele.com/) in 2014. We host civic hacking events, work on civic tech projects with municipal partners and non-profits, and advocate for open data. Currently we're focusing on [housing](https://github.com/CodeForPortland/housing).
+Building on the work of [Chris Helm](https://github.com/chelm) and the [Esri DC R&D Center](http://dc.esri.com/) to create a modular [ETL](http://en.wikipedia.org/wiki/Extract,_transform,_load) engine for dynamically transforming geospatial data on the web. [Pull requests](http://readwrite.com/2014/07/02/github-pull-request-etiquette) welcome.
 
-### [`Esri PDX`](http://pdx.esri.com)
+## past
 
-A small team of geniuses brought together by [Amber Case](http://caseorganic.com/) and [Aaron Parecki](https://aaronparecki.com/) working on web and mobile geospatial tools. I work there as a web developer and designer. My secret agenda is to bring [Open Web](http://codinginparadise.org/weblog/2008/04/whats-open-web-and-why-is-it-important.html) values and processes to the monolithic mapping software corporation that we serve.
+### [`ArcGIS for Developers`](https://developers.arcgis.com)
 
-## articles
-
-Sometimes I write things, mostly about the internet and open source software.
-
-* [Deploy your own PaaS](https://gist.github.com/ngoldman/7287753)
-* [Be a Good Open Source Shepherd](https://gist.github.com/ngoldman/88ab15a3eeadcb06103b)
-
-## programming
+I worked on the design and development of a documentation site for developers that needed to use Esri's [ArcGIS web platform](http://www.arcgis.com/features/), along with [Paul C Pederson](http://ppaulcpederson.com), [Nikolas Wise](http://nikolas.io/), [Rachel Nehmer](https://github.com/kneemer), [Manny Lopez](https://twitter.com/himannylopez), and our fearless leader [Patrick Arlt](https://github.com/patrickarlt/).
 
 ### [`geobin.io`](http://geobin.io)
 
 A web application that allows you to inspect HTTP requests with geographic data. Built at the [Esri Portland R&D Center](http://pdx.esri.com) with [Ryan Arana](https://github.com/aranasaurus), [Josh Yaganeh](https://github.com/jyaganeh), and [Court Fowler](https://github.com/courtf).
 
-### [`Koop`](http://github.com/esri/koop)
-
-Working with [Chris Helm](https://github.com/chelm) and the [Esri DC R&D Center](http://dc.esri.com/) to create a modular [ETL](http://en.wikipedia.org/wiki/Extract,_transform,_load) engine for viewing and downloading open spatial data from different providers and formats. [Pull requests](http://readwrite.com/2014/07/02/github-pull-request-etiquette) welcome.
-
 ### [`Geotrigger Service`](https://developers.arcgis.com/en/features/geotrigger-service/)
 
 A web platform and set of SDKs for adding [geofencing](http://en.wikipedia.org/wiki/Geo-fence) capabilities to mobile applications. I helped build supporting software for it like the [Geotrigger Editor](https://developers.arcgis.com/geotrigger-service/guide/geotrigger-editor/) and [Geotrigger Faker](https://developers.arcgis.com/geotrigger-service/guide/geotrigger-faker/).
-
-### [`ArcGIS for Developers`](https://developers.arcgis.com)
-
-I work on the design and development of a documentation site for developers that need to use Esri's [ArcGIS web platform](http://www.arcgis.com/features/), along with [Paul C Pederson](http://ppaulcpederson.com), [Nikolas Wise](http://nikolas.io/), [Rachel Nehmer](https://github.com/kneemer), [Manny Lopez](https://twitter.com/himannylopez), and our fearless leader [Patrick Arlt](https://github.com/patrickarlt/).
 
 *Many more small projects at [github.com/ngoldman](https://github.com/ngoldman?tab=repositories)*
