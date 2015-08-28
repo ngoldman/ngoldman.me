@@ -6,14 +6,17 @@ var canvas = document.querySelector("canvas"),
     context = canvas.getContext("2d"),
     width = canvas.width,
     height = canvas.height,
-    radius = 0,
+    radius = 1,
+    eye = 5,
+    alf = .25,
+    strokeColor = 'white'
     minDistance = 0,
-    maxDistance = 42,
+    maxDistance = 13,
     minDistance2 = minDistance * minDistance,
     maxDistance2 = maxDistance * maxDistance;
 
 var tau = 2 * Math.PI,
-    n = 42,
+    n = 555,
     particles = new Array(n);
 
 for (var i = 0; i < n; ++i) {
@@ -40,6 +43,13 @@ function addParticle (event) {
     vx: 0,
     vy: 0
   })
+
+  eye += .01
+  alf = alf >= 1 ? 1 : alf += .01
+
+  if (alf >= 1) {
+    strokeColor = '#' + (Math.random() * 0xFFFFFF << 0).toString(16)
+  }
 }
 
 timer.timer(function(elapsed) {
@@ -50,9 +60,11 @@ timer.timer(function(elapsed) {
     var p = particles[i];
     p.x += p.vx; if (p.x < -maxDistance) p.x += width + maxDistance * 2; else if (p.x > width + maxDistance) p.x -= width + maxDistance * 2;
     p.y += p.vy; if (p.y < -maxDistance) p.y += height + maxDistance * 2; else if (p.y > height + maxDistance) p.y -= height + maxDistance * 2;
-    p.vx += 0.13 * (Math.random() - .5) - 0.01 * p.vx;
-    p.vy += 0.13 * (Math.random() - .5) - 0.01 * p.vy;
+    p.vx += 0.05 * (Math.random() - .5) - 0.01 * p.vx;
+    p.vy += 0.05 * (Math.random() - .5) - 0.01 * p.vy;
+    context.globalAlpha = alf
     context.beginPath();
+    context.fillStyle = 'white';
     context.arc(p.x, p.y, radius, 0, tau);
     context.fill();
   }
@@ -65,15 +77,26 @@ timer.timer(function(elapsed) {
           dy = pi.y - pj.y,
           d2 = dx * dx + dy * dy;
       if (d2 < maxDistance2) {
-        context.globalAlpha = d2 > minDistance2 ? (maxDistance2 - d2) / (maxDistance2 - minDistance2) : .1;
+        context.globalAlpha = (d2 > minDistance2 ? (maxDistance2 - d2) / (maxDistance2 - minDistance2) : .1) * alf;
         context.beginPath();
-        context.strokeStyle = 'white';
+        context.strokeStyle = strokeColor;
         context.moveTo(pi.x, pi.y);
         context.lineTo(pj.x, pj.y);
         context.stroke();
       }
     }
   }
+
+  context.globalAlpha = 1;
+  context.fillStyle = 'black';
+
+  context.beginPath();
+  context.arc(107, 85, eye, 0, tau);
+  context.fill();
+
+  context.beginPath();
+  context.arc(142, 85, eye, 0, tau);
+  context.fill();
 
   context.restore();
 });
