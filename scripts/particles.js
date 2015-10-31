@@ -8,15 +8,16 @@ var canvas = document.querySelector("canvas"),
     height = canvas.height,
     radius = 1,
     eye = 5,
-    alf = .25,
+    alf = .15,
     strokeColor = 'white'
     minDistance = 0,
-    maxDistance = 13,
+    maxDistance = 23,
     minDistance2 = minDistance * minDistance,
-    maxDistance2 = maxDistance * maxDistance;
+    maxDistance2 = maxDistance * maxDistance,
+    drawing = false;
 
 var tau = 2 * Math.PI,
-    n = 555,
+    n = 666,
     particles = new Array(n);
 
 for (var i = 0; i < n; ++i) {
@@ -28,7 +29,16 @@ for (var i = 0; i < n; ++i) {
   };
 }
 
-canvas.addEventListener("mousedown", addParticle, false);
+canvas.addEventListener("mousedown", function (e) {
+  drawing = true
+  addParticle(e)
+}, false);
+canvas.addEventListener("mousemove", function (e) {
+  if (drawing) addParticle(e)
+}, false);
+canvas.addEventListener("mouseup", function () {
+  drawing = false
+}, false);
 
 function addParticle (event) {
   var x = event.x;
@@ -44,12 +54,12 @@ function addParticle (event) {
     vy: 0
   })
 
-  eye += .01
-  alf = alf >= 1 ? 1 : alf += .01
+  if (eye < 7) eye += .01
+  // alf = alf >= 1 ? 1 : alf += .01
 
-  if (alf >= 1) {
-    strokeColor = '#' + (Math.random() * 0xFFFFFF << 0).toString(16)
-  }
+  // if (alf >= 1 && !(particles.length % 100)) {
+  //   strokeColor = '#' + (Math.random() * 0xFFFFFF << 0).toString(16)
+  // }
 }
 
 timer.timer(function(elapsed) {
@@ -77,7 +87,7 @@ timer.timer(function(elapsed) {
           dy = pi.y - pj.y,
           d2 = dx * dx + dy * dy;
       if (d2 < maxDistance2) {
-        context.globalAlpha = (d2 > minDistance2 ? (maxDistance2 - d2) / (maxDistance2 - minDistance2) : .1) * alf;
+        context.globalAlpha = (d2 > minDistance2 ? (maxDistance2 - d2) / (maxDistance2 - minDistance2) : .1) * ( alf * 3 );
         context.beginPath();
         context.strokeStyle = strokeColor;
         context.moveTo(pi.x, pi.y);
@@ -100,3 +110,7 @@ timer.timer(function(elapsed) {
 
   context.restore();
 });
+
+setInterval(function () {
+  particles.shift()
+}, 200)
