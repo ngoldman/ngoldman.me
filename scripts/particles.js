@@ -4,20 +4,20 @@
 
 var canvas = document.querySelector("canvas"),
     context = canvas.getContext("2d"),
-    width = canvas.width,
-    height = canvas.height,
-    radius = 1,
+    width = context.canvas.width = window.innerWidth,
+    height = context.canvas.height,
+    radius = 0,
     eye = 5,
     alf = .15,
     strokeColor = 'white'
     minDistance = 0,
-    maxDistance = 23,
+    maxDistance = 31,
     minDistance2 = minDistance * minDistance,
     maxDistance2 = maxDistance * maxDistance,
     drawing = false;
 
 var tau = 2 * Math.PI,
-    n = 666,
+    n = 222,
     particles = new Array(n);
 
 for (var i = 0; i < n; ++i) {
@@ -54,15 +54,18 @@ function addParticle (event) {
     vy: 0
   })
 
-  if (eye < 7) eye += .01
-  // alf = alf >= 1 ? 1 : alf += .01
+  // if (eye < 7) eye += .01
+  // alf = alf >= .3 ? .3 : alf += .001
 
-  // if (alf >= 1 && !(particles.length % 100)) {
-  //   strokeColor = '#' + (Math.random() * 0xFFFFFF << 0).toString(16)
-  // }
+  if (!(particles.length < 444)) {
+    strokeColor = 'gold' // '#' + (Math.random() * 0xFFFFFF << 0).toString(16)
+  } else {
+    strokeColor = 'white'
+  }
 }
 
 timer.timer(function(elapsed) {
+  width = context.canvas.width = window.innerWidth;
   context.save();
   context.clearRect(0, 0, width, height);
 
@@ -74,7 +77,7 @@ timer.timer(function(elapsed) {
     p.vy += 0.05 * (Math.random() - .5) - 0.01 * p.vy;
     context.globalAlpha = alf
     context.beginPath();
-    context.fillStyle = 'white';
+    context.fillStyle = strokeColor;
     context.arc(p.x, p.y, radius, 0, tau);
     context.fill();
   }
@@ -97,16 +100,16 @@ timer.timer(function(elapsed) {
     }
   }
 
-  context.globalAlpha = 1;
-  context.fillStyle = 'black';
+  // context.globalAlpha = 1;
+  // context.fillStyle = 'black';
 
-  context.beginPath();
-  context.arc(107, 85, eye, 0, tau);
-  context.fill();
+  // context.beginPath();
+  // context.arc(107, 85, eye, 0, tau);
+  // context.fill();
 
-  context.beginPath();
-  context.arc(142, 85, eye, 0, tau);
-  context.fill();
+  // context.beginPath();
+  // context.arc(142, 85, eye, 0, tau);
+  // context.fill();
 
   context.restore();
 });
