@@ -4,13 +4,11 @@
 
 </header>
 
-## current
+## past
 
 ### [`Koop`](http://koopjs.github.io/)
 
 Building on the work of [Chris Helm](https://github.com/chelm) and the [Esri DC R&D Center](http://dc.esri.com/) to create a modular [ETL](http://en.wikipedia.org/wiki/Extract,_transform,_load) engine for dynamically transforming geospatial data on the web. [Pull requests](http://readwrite.com/2014/07/02/github-pull-request-etiquette) welcome.
-
-## past
 
 ### [`ArcGIS for Developers`](https://developers.arcgis.com)
 
