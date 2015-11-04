@@ -4,11 +4,13 @@
 
 </header>
 
-## past
-
 ### [`Koop`](http://koopjs.github.io/)
 
-Building on the work of [Chris Helm](https://github.com/chelm) and the [Esri DC R&D Center](http://dc.esri.com/) to create a modular [ETL](http://en.wikipedia.org/wiki/Extract,_transform,_load) engine for dynamically transforming geospatial data on the web. [Pull requests](http://readwrite.com/2014/07/02/github-pull-request-etiquette) welcome.
+Koop is an open source project started by [Chris Helm](https://github.com/chelm) and the [Esri DC R&D Center](http://dc.esri.com/) to create a modular [ETL](http://en.wikipedia.org/wiki/Extract,_transform,_load) engine for dynamically transforming geospatial data on the web. I took over management of the project after Chris moved on from Esri, then handed my role off to [Daniel Fenton](https://github.com/dmfenton) after I left [EsriPDX](http://pdx.esri.com/).
+
+### [`Friends`](http://moose-team.github.io/friends/)
+
+Friends is like Slack except P2P, offline friendly and open source. We transmit data over secure channels and authenticate messages. It's made by a [group of open source developers](https://github.com/moose-team) who are motivated to make a public chat platform that is easy to use but isn't centrally controlled, and where data is owned by its users.
 
 ### [`Code for Portland`](http://codeforportland.org)
 
