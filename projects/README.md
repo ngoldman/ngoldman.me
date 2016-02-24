@@ -18,7 +18,7 @@ Code for Portland is a [Code for America brigade](http://codeforamerica.org/brig
 
 ### [`ArcGIS for Developers`](https://developers.arcgis.com)
 
-I worked on the design and development of a documentation site for developers that needed to use Esri's [ArcGIS web platform](http://www.arcgis.com/features/), along with [Paul C Pederson](http://ppaulcpederson.com), [Nikolas Wise](http://nikolas.ws/), [Rachel Nehmer](https://github.com/kneemer), [Manny Lopez](https://twitter.com/himannylopez), and our fearless leader [Patrick Arlt](https://github.com/patrickarlt/).
+I worked on the design and development of a documentation site for developers that needed to use Esri's [ArcGIS web platform](http://www.arcgis.com/features/), along with [Paul C Pederson](http://paulcpederson.com), [Nikolas Wise](http://nikolas.ws/), [Rachel Nehmer](https://github.com/kneemer), [Manny Lopez](https://twitter.com/himannylopez), and our fearless leader [Patrick Arlt](https://github.com/patrickarlt/).
 
 ### [`geobin.io`](http://geobin.io)
 
