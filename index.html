@@ -7,21 +7,24 @@
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="stylesheet" href="http://code.ngoldman.me/style.css/style.css">
   <style>
-    html {
-      background: #fff;
+    html, body,
+    .markdown-body {
+      background: #000;
+      color: #fff;
+      height: 100%;
     }
     .page {
-      margin: 3rem auto;
+      margin: 0 auto;
+      padding: 3rem 0;
       max-width: 480px;
     }
     .canvas {
       display: block;
-      border-radius: 125px;
-      margin: 0 auto -230px;
-      position: absolute;
+      position: fixed;
       left: 0;
       right: 0;
       top: 0;
+      bottom: 0;
     }
     .ghostman {
       display: block;
@@ -30,13 +33,14 @@
       min-height: 222px;
     }
     .ghostman img {
+      background: white;
       max-width: 100%;
+      border-radius: 100%;
     }
     .markdown-body .colophon {
       font-family: monospace;
       font-size: 22px;
       text-align: center;
-      color: #000;
       margin: auto;
     }
     .markdown-body .colophon h1 {
@@ -44,12 +48,12 @@
       font-size: 24px;
     }
     .markdown-body a {
-      color: #f30;
+      color: gold;
       transition: all 0.5s ease;
       text-decoration: none;
     }
     .markdown-body a:hover {
-      color: #f30;
+      color: gold;
       text-decoration: underline;
     }
     .noselect {
